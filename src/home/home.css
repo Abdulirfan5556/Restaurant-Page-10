@@ -1,0 +1,47 @@
+.home-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    margin-bottom: 0;
+    font-size: 4rem;
+    color: rgb(255, 255, 255);
+  }
+
+  hr {
+    margin-top: 0;
+    width: 100%;
+    border: 3px solid #ffffff;
+    border-radius: 2px;
+  }
+
+  &>div {
+    width: 100%;
+    display: flex;
+
+    button {
+      border: 0;
+      background: transparent;
+      color: #0063B2FF;
+      outline: 3px solid #0063B2FF;
+      font: inherit;
+      font-weight: 500;
+      font-size: 1.1rem;
+      padding: 15px 0;
+      border-radius: 5px;
+      cursor: pointer;
+
+      flex: 1;
+
+      &+button {
+        margin-left: 1rem;
+      }
+
+      &:hover {
+        outline: 5px solid #ffffff50;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.cards {
+  padding: 3rem;
+  width: 65%;
+  margin-top: 3rem;
+  background: #ffffff;
+
+  display: grid;
+  gap: 2rem;
+
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  border-radius: 5px;
+
+  .card {
+    color: white;
+    padding: 1rem;
+    padding-bottom: 0;
+    border-radius: 5px;
+    background: #0063B2FF;
+    /* outline: 2px solid white; */
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    hr {
+      width: 100%;
+      border: 1px solid #ffffff;
+      border-radius: 2px;
+    }
+
+    div {
+      padding-left: 7px;
+
+      p:first-child {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 1.15rem;
+      }
+
+      p:nth-child(2) {
+        margin-top: 5px;
+        font-weight: 500;
+
+        &::before {
+          content: "$ ";
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
